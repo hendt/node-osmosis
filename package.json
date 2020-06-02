@@ -20,15 +20,15 @@
     "email": "chipka01@email.franklin.edu"
   },
   "dependencies": {
-    "libxmljs-dom": "~0.0.17",
-    "needle": "^1.6.0"
+    "libxmljs-dom": "https://github.com/hendt/libxmljs-dom.git",
+    "needle": "^2.5.0"
   },
   "devDependencies": {
     "jscs": ">=3.0.2",
     "nodeunit": "0.11.3"
   },
   "scripts": {
-    "test": "node ./node_modules/.bin/nodeunit test"
+    "test": "nodeunit test"
   },
   "license": "MIT",
   "main": "index",

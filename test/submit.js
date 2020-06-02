@@ -101,6 +101,11 @@ function getInputs(form, submit) {
             continue;
         }
 
+        if (input.substr(0, 3) === 'cb3' && input !== submit) {
+            obj['cb3[]'] = (obj['cb3[]'] || []).concat(inputs[input].value);
+            continue;
+        }
+
         if (inputs[input].value === undefined) {
             continue;
         }
